@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Archivo Black";
+    src: url(fonts/Archivo-Black.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Archivo Regular";
+    src: url(fonts/Archivo-Regular.ttf) format(truetype);
+}
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Archivo Black";
+    background-color: #E0E0E0;
+}
+.header {
+    padding: 16px 0px;
+    background-color: #212121;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav__logo {
+    width: 80px;
+    height: 80px;
+}
+.nav__logo-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nav__menu-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav__menu-item {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255,0.7);
+    transition: color 150ms ease-in 100ms;
+}
+.nav__menu-item:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.nav__register-link {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 16px 32px;
+    background-color: rgba( 41, 98, 255, 1);
+    transition: all 150ms ease-in 100ms;
+}
+.nav__register-link:hover {
+    background-color: rgba( 41, 98, 255, 0.8);
+}
+.main {
+    margin: 30px 0;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product {
+    padding: 16px;
+    flex-basis: 32%;
+    background-color: #fff;
+    font-family: "Archivo Regular";
+    border-radius: 10px;
+}
+.product__img {
+    width: 350px;
+    height: 350px;
+}
+.product__img-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 14px;
+    transition: all 150ms ease-in 100ms;
+}
+.product__img-image:hover {
+    scale: 1.1;
+}
+.product__name {
+    text-align: center;
+    margin: 24px 0;
+}
+.product__name-title {
+    text-decoration: none;
+    color: #212121;
+}
+.product__price-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.dollars {
+    font-size: 20px;
+    color: #23b060;
+}
+.score {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.score__logo-icon {
+    color: #f1c21b;
+    width: 22px;
+    height: 22px;
+}
+.buy-btn {
+    width: 100%;
+    margin-top: 14px;
+}
+.buy-btn__link {
+    display: block;
+    text-align: center;
+    font-family: "Archivo Black";
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 16px 32px;
+    background-color: rgba( 41, 98, 255, 1);
+    transition: all 150ms ease-in 100ms;
+}
+.buy-btn__link:hover {
+    background-color: rgba( 41, 98, 255, 0.8);
+}
