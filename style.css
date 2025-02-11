@@ -1,3 +1,10 @@
+/* 
+
+=================
+      Fonts
+=================
+
+ */
 @font-face {
     font-family: "Archivo Black";
     src: url(fonts/Archivo-Black.ttf) format(truetype);
@@ -18,6 +25,13 @@ body {
     font-family: "Archivo Black";
     background-color: #E3EAF5;
 }
+/* 
+
+=================
+      header
+=================
+
+ */
 .header {
     padding: 16px 0px;
     background-color: #1E3A8A;
@@ -26,7 +40,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .nav__logo {
     width: 80px;
@@ -47,23 +60,39 @@ body {
 .nav__menu-item {
     text-decoration: none;
     font-size: 18px;
-    color: rgba(255, 255, 255,0.7);
+    color: rgba(255, 255, 255,0.8 );
     transition: color 150ms ease-in 100ms;
 }
 .nav__menu-item:hover {
     color: rgba(255, 255, 255, 1);
 }
+.nav__register {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .nav__register-link {
+    padding: 16px 34px;
+    border-radius: 16px;
+    font-size: 18px;
     text-decoration: none;
     color: #fff;
-    border-radius: 15px;
-    padding: 16px 32px;
-    background-color: rgba( 41, 98, 255, 1);
+    background-color: #2962FF;
     transition: all 150ms ease-in 100ms;
 }
 .nav__register-link:hover {
-    background-color: rgba( 41, 98, 255, 0.8);
+    background-color: #304FFE;
 }
+.nav__register-link:active {
+    background-color: #6200EA;
+}
+/* 
+
+=================
+      Main
+=================
+
+ */
 .main {
     margin: 30px 0;
 }
@@ -145,6 +174,9 @@ body {
     width: 22px;
     height: 22px;
 }
+.score__value {
+    color: #f1c21b;
+}
 .buy-btn {
     width: 100%;
     margin-top: 14px;
@@ -157,12 +189,12 @@ body {
     color: #fff;
     border-radius: 15px;
     padding: 16px 32px;
-    background-color: rgba( 41, 98, 255, 1);
+    background-color: #2962FF;
     transition: all 150ms ease-in 100ms;
 }
 .buy-btn__link:hover {
-    background-color: rgba( 41, 98, 255, 0.9);
+    background-color: #304FFE;
 }
 .buy-btn__link:active {
-    background-color: rgba( 41, 98, 255, 0.7);
+    background-color: #6200EA;
 }
