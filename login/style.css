@@ -1,0 +1,137 @@
+/* 
+
+=================
+      Fonts
+=================
+
+ */
+@font-face {
+    font-family: "Archivo Black";
+    src: url(../fonts/Archivo-Black.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Archivo Regular";
+    src: url(../fonts/Archivo-Regular.ttf) format(truetype);
+}
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Archivo Black";
+    background-color: #E3EAF5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+/* 
+
+=================
+      header
+=================
+
+ */
+.header {
+    padding: 16px 0px;
+    background-color: #1E3A8A;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__logo {
+    width: 80px;
+    height: 80px;
+}
+.nav__logo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nav__menu-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav__menu-item {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255,0.8 );
+    transition: color 150ms ease-in 100ms;
+}
+.nav__menu-item:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.nav__register {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav__register-link {
+    padding: 16px 34px;
+    border-radius: 16px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2962FF;
+    transition: all 150ms ease-in 100ms;
+}
+.nav__register-link:hover {
+    background-color: #304FFE;
+}
+.nav__register-link:active {
+    background-color: #6200EA;
+}
+
+
+.main {
+    font-family: "Archivo Regular";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: #fff;
+}
+.form {
+    width: 400px;
+    padding: 30px;
+    background-color: #1E3A8A;
+
+}
+.form__title {
+    text-align: center;
+}
+.form__input {
+    font-family: "Archivo Regular";
+    background-color: #E5E7EB;
+    color: #1E3A8A;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+}
+.input::placeholder {
+    color: #9CA3AF;
+}
+.form__btn {
+    font-family: "Archivo Regular";
+    color: #fff;
+    font-size: 18px;
+    background-color: #3B82F6;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
