@@ -24,6 +24,7 @@ html {
 body {
     font-family: "Archivo Black";
     background-color: #E3EAF5;
+    overflow-x: hidden;
 }
 /* 
 
